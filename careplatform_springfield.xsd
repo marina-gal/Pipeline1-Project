@@ -1,0 +1,147 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="CarePlatform">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PeopleNeedingAssistance" type="PeopleNeedingAssistanceType" maxOccurs="unbounded"/>
+        <xs:element name="Services" type="ServicesType" maxOccurs="unbounded"/>
+        <xs:element name="ServiceProviders" type="ServiceProvidersType" maxOccurs="unbounded"/>
+        <xs:element name="Participation" type="ParticipationType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- People needing assistance -->
+  <xs:complexType name="PeopleNeedingAssistanceType">
+    <xs:sequence>
+      <xs:element name="Person" type="PersonType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string"/>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Age" type="xs:integer"/>
+      <xs:element name="Gender" type="xs:string"/>
+      <xs:element name="Address" type="AddressType"/>
+      <xs:element name="Contact" type="ContactType"/>
+      <xs:element name="DisabilityType" type="xs:string"/>
+      <xs:element name="MedicalConditions" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="EmergencyContact" type="ContactType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Address Type -->
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="Street" type="xs:string"/>
+      <xs:element name="City" type="xs:string"/>
+      <xs:element name="State" type="xs:string"/>
+      <xs:element name="ZipCode" type="xs:string"/>
+      <xs:element name="Country" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Contact Type -->
+  <xs:complexType name="ContactType">
+    <xs:sequence>
+      <xs:element name="Phone" type="xs:string"/>
+      <xs:element name="Email" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Services and activities -->
+   <xs:complexType name="ServicesType">
+    <xs:sequence>
+      <xs:element name="Service" type="ServiceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ServiceType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string"/>
+      <xs:element name="Type" type="xs:string"/>
+      <xs:element name="Description" type="xs:string"/>
+      <xs:element name="ProviderID" type="xs:string"/>
+      <xs:element name="Schedule" type="ScheduleType"/>
+      <xs:element name="Location" type="LocationType"/>
+      <xs:element name="Staff" type="StaffType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Schedule Type -->
+  <xs:complexType name="ScheduleType">
+    <xs:sequence>
+      <xs:element name="Days">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Day" type="xs:string" maxOccurs="5"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Time" type="xs:string"/>
+      <xs:element name="Frequency" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+  <!-- Location Type -->
+  <xs:complexType name="LocationType">
+    <xs:sequence>
+      <xs:element name="Address" type="AddressType"/>
+      <xs:element name="Room" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- Staff Type -->
+  <xs:complexType name="StaffType">
+    <xs:sequence>
+      <xs:element name="Instructor" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Assistant" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
+	  <xs:element name="Facilitator" type="StaffMemberType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StaffMemberType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string"/>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Role" type="xs:string"/>
+      <xs:element name="Contact" type="ContactType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Service providers -->
+  <xs:complexType name="ServiceProvidersType">
+    <xs:sequence>
+      <xs:element name="Provider" type="ProviderType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProviderType">
+    <xs:sequence>
+      <xs:element name="ProviderID" type="xs:string"/>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="TypeOfService" type="xs:string"/>
+      <xs:element name="Contact" type="ContactType"/>
+      <xs:element name="Address" type="AddressType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Participation and scheduling -->
+  <xs:complexType name="ParticipationType">
+    <xs:sequence>
+      <xs:element name="ParticipationEntry" type="ParticipationEntryType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ParticipationEntryType">
+    <xs:sequence>
+      <xs:element name="PersonID" type="xs:string"/>
+      <xs:element name="ServiceID" type="xs:string"/>
+      <xs:element name="Schedule" type="ScheduleType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

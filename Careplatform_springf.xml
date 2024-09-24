@@ -1,0 +1,450 @@
+<CarePlatform>
+  <PeopleNeedingAssistance>
+    <!-- John Doe -->
+    <Person>
+      <ID>001</ID>
+      <Name>John Doe</Name>
+      <Age>78</Age>
+      <Gender>Male</Gender>
+      <Address>
+        <Street>123 Main St</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62701</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-123-4567</Phone>
+        <Email>john.doe@example.com</Email>
+      </Contact>
+      <DisabilityType>Mobility Impairment</DisabilityType>
+      <MedicalConditions>Arthritis</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-789-1234</Phone>
+        <Email>emergency.doe@example.com</Email>
+      </EmergencyContact>
+    </Person>
+
+    <!-- Jane Smith -->
+    <Person>
+      <ID>002</ID>
+      <Name>Jane Smith</Name>
+      <Age>85</Age>
+      <Gender>Female</Gender>
+      <Address>
+        <Street>456 Oak St</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62702</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-987-6543</Phone>
+        <Email>jane.smith@example.com</Email>
+      </Contact>
+      <DisabilityType>Vision Impairment</DisabilityType>
+      <MedicalConditions>Glaucoma</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-456-7890</Phone>
+        <Email>emergency.smith@example.com</Email>
+      </EmergencyContact>
+    </Person>
+
+    <!-- George Brown -->
+    <Person>
+      <ID>003</ID>
+      <Name>George Brown</Name>
+      <Age>90</Age>
+      <Gender>Male</Gender>
+      <Address>
+        <Street>789 Pine St</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62703</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-654-9870</Phone>
+        <Email>george.brown@example.com</Email>
+      </Contact>
+      <DisabilityType>Hearing Loss</DisabilityType>
+      <MedicalConditions>Hypertension</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-321-9876</Phone>
+        <Email>emergency.brown@example.com</Email>
+      </EmergencyContact>
+    </Person>
+
+    <!-- Sarah Johnson -->
+    <Person>
+      <ID>004</ID>
+      <Name>Sarah Johnson</Name>
+      <Age>82</Age>
+      <Gender>Female</Gender>
+      <Address>
+        <Street>22 Willow Lane</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62704</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-432-8765</Phone>
+        <Email>sarah.johnson@example.com</Email>
+      </Contact>
+      <DisabilityType>Reduced Mobility</DisabilityType>
+      <MedicalConditions>Diabetes</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-876-5432</Phone>
+        <Email>emergency.johnson@example.com</Email>
+      </EmergencyContact>
+    </Person>
+
+    <!-- Michael White -->
+    <Person>
+      <ID>005</ID>
+      <Name>Michael White</Name>
+      <Age>77</Age>
+      <Gender>Male</Gender>
+      <Address>
+        <Street>88 River Ave</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62705</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-567-1234</Phone>
+        <Email>michael.white@example.com</Email>
+      </Contact>
+      <DisabilityType>Mobility Impairment</DisabilityType>
+      <MedicalConditions>Parkinson's Disease</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-789-9876</Phone>
+        <Email>emergency.white@example.com</Email>
+      </EmergencyContact>
+    </Person>
+
+    <!-- Emily Davis -->
+    <Person>
+      <ID>006</ID>
+      <Name>Emily Davis</Name>
+      <Age>84</Age>
+      <Gender>Female</Gender>
+      <Address>
+        <Street>55 Oak Grove St</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62706</ZipCode>
+        <Country>USA</Country>
+      </Address>
+      <Contact>
+        <Phone>555-123-9876</Phone>
+        <Email>emily.davis@example.com</Email>
+      </Contact>
+      <DisabilityType>Cognitive Impairment</DisabilityType>
+      <MedicalConditions>Alzheimer's Disease</MedicalConditions>
+      <EmergencyContact>
+        <Phone>555-654-3210</Phone>
+        <Email>emergency.davis@example.com</Email>
+      </EmergencyContact>
+    </Person>
+  </PeopleNeedingAssistance>
+
+  <Services>
+    <!-- Yoga for Reduced Mobility -->
+    <Service>
+      <ID>1004</ID>
+      <Type>Physical Activity</Type>
+      <Description>Yoga sessions aimed at improving mobility for people with limited movement.</Description>
+      <ProviderID>2001</ProviderID>
+      <Schedule>
+        <Days>
+          <Day>Monday</Day>
+          <Day>Wednesday</Day>
+        </Days>
+        <Time>10:00 AM - 11:00 AM</Time>
+        <Frequency>Weekly</Frequency>
+      </Schedule>
+      <Location>
+        <Address>
+          <Street>101 Care Center Drive</Street>
+          <City>Springfield</City>
+          <State>IL</State>
+          <ZipCode>62701</ZipCode>
+          <Country>USA</Country>
+        </Address>
+        <Room>Yoga Room 2</Room>
+      </Location>
+      <Staff>
+        <Instructor>
+          <ID>S001</ID>
+          <Name>Lisa Turner</Name>
+          <Role>Yoga Instructor</Role>
+          <Contact>
+            <Phone>555-789-1234</Phone>
+            <Email>lisa.turner@yogahealth.org</Email>
+          </Contact>
+        </Instructor>
+      </Staff>
+    </Service>
+
+    <!-- Swimming for Mobility Rehabilitation -->
+    <Service>
+      <ID>1005</ID>
+      <Type>Physical Activity</Type>
+      <Description>Swimming classes to aid mobility for individuals with reduced movement ability.</Description>
+      <ProviderID>2002</ProviderID>
+      <Schedule>
+        <Days>
+          <Day>Tuesday</Day>
+          <Day>Thursday</Day>
+        </Days>
+        <Time>01:00 PM - 02:30 PM</Time>
+        <Frequency>Biweekly</Frequency>
+      </Schedule>
+      <Location>
+        <Address>
+          <Street>45 Wellness Ave</Street>
+          <City>Springfield</City>
+          <State>IL</State>
+          <ZipCode>62701</ZipCode>
+          <Country>USA</Country>
+        </Address>
+        <Room>Swimming Pool</Room>
+      </Location>
+      <Staff>
+        <Instructor>
+          <ID>S002</ID>
+          <Name>Mark Johnson</Name>
+          <Role>Swimming Coach</Role>
+          <Contact>
+            <Phone>555-987-6543</Phone>
+            <Email>mark.johnson@swimtherapy.org</Email>
+          </Contact>
+        </Instructor>
+        <Assistant>
+          <ID>S003</ID>
+          <Name>Rachel Adams</Name>
+          <Role>Assistant Coach</Role>
+          <Contact>
+            <Phone>555-321-7654</Phone>
+            <Email>rachel.adams@swimtherapy.org</Email>
+          </Contact>
+        </Assistant>
+      </Staff>
+    </Service>
+
+    <!-- Painting Class -->
+    <Service>
+      <ID>1006</ID>
+      <Type>Social Activity</Type>
+      <Description>Painting classes for creative expression and relaxation.</Description>
+      <ProviderID>2003</ProviderID>
+      <Schedule>
+        <Days>
+          <Day>Wednesday</Day>
+        </Days>
+        <Time>02:00 PM - 04:00 PM</Time>
+        <Frequency>Weekly</Frequency>
+      </Schedule>
+      <Location>
+        <Address>
+          <Street>78 Art Studio Blvd</Street>
+          <City>Springfield</City>
+          <State>IL</State>
+          <ZipCode>62702</ZipCode>
+          <Country>USA</Country>
+        </Address>
+        <Room>Art Room 1</Room>
+      </Location>
+      <Staff>
+        <Instructor>
+          <ID>S004</ID>
+          <Name>Anna Mitchell</Name>
+          <Role>Painting Instructor</Role>
+          <Contact>
+            <Phone>555-654-9870</Phone>
+            <Email>anna.mitchell@arttherapy.org</Email>
+          </Contact>
+        </Instructor>
+      </Staff>
+    </Service>
+
+    <!-- Book Club -->
+    <Service>
+      <ID>1007</ID>
+      <Type>Social Activity</Type>
+      <Description>Monthly book club for discussion and social interaction.</Description>
+      <ProviderID>2001</ProviderID>
+      <Schedule>
+        <Days>
+          <Day>Friday</Day>
+        </Days>
+        <Time>03:00 PM - 05:00 PM</Time>
+        <Frequency>Monthly</Frequency>
+      </Schedule>
+      <Location>
+        <Address>
+          <Street>101 Care Center Drive</Street>
+          <City>Springfield</City>
+          <State>IL</State>
+          <ZipCode>62701</ZipCode>
+          <Country>USA</Country>
+        </Address>
+        <Room>Community Room</Room>
+      </Location>
+      <Staff>
+        <Facilitator>
+          <ID>S005</ID>
+          <Name>James Lee</Name>
+          <Role>Book Club Facilitator</Role>
+          <Contact>
+            <Phone>555-123-4567</Phone>
+            <Email>james.lee@communityservices.org</Email>
+          </Contact>
+        </Facilitator>
+      </Staff>
+    </Service>
+  </Services>
+
+  <ServiceProviders>
+    <!-- Yoga Health Organization -->
+    <Provider>
+      <ProviderID>2001</ProviderID>
+      <Name>Yoga Health Organization</Name>
+      <TypeOfService>Yoga for Mobility</TypeOfService>
+      <Contact>
+        <Phone>555-345-6789</Phone>
+        <Email>info@yogahealth.org</Email>
+      </Contact>
+      <Address>
+        <Street>101 Care Center Drive</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62701</ZipCode>
+        <Country>USA</Country>
+      </Address>
+    </Provider>
+
+    <!-- Swim Therapy Association -->
+    <Provider>
+      <ProviderID>2002</ProviderID>
+      <Name>Swim Therapy Association</Name>
+      <TypeOfService>Swimming for Mobility</TypeOfService>
+      <Contact>
+        <Phone>555-567-1234</Phone>
+        <Email>contact@swimtherapy.org</Email>
+      </Contact>
+      <Address>
+        <Street>45 Wellness Ave</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62701</ZipCode>
+        <Country>USA</Country>
+      </Address>
+    </Provider>
+
+    <!-- Art Therapy Institute -->
+    <Provider>
+      <ProviderID>2003</ProviderID>
+      <Name>Art Therapy Institute</Name>
+      <TypeOfService>Painting Therapy</TypeOfService>
+      <Contact>
+        <Phone>555-987-1234</Phone>
+        <Email>info@arttherapy.org</Email>
+      </Contact>
+      <Address>
+        <Street>78 Art Studio Blvd</Street>
+        <City>Springfield</City>
+        <State>IL</State>
+        <ZipCode>62702</ZipCode>
+        <Country>USA</Country>
+      </Address>
+    </Provider>
+  </ServiceProviders>
+
+  <Participation>
+    <!-- Participation for Sarah Johnson -->
+    <ParticipationEntry>
+      <PersonID>004</PersonID>
+      <ServiceID>1004</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Monday</Day>
+          <Day>Wednesday</Day>
+          <Day>Friday</Day>
+        </Days>
+        <Time>10:00 AM - 11:00 AM</Time>
+        <Frequency>Weekly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+
+    <!-- Participation for Michael White (Swimming for Mobility Rehabilitation) -->
+    <ParticipationEntry>
+      <PersonID>005</PersonID>
+      <ServiceID>1005</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Tuesday</Day>
+          <Day>Thursday</Day>
+        </Days>
+        <Time>01:00 PM - 02:30 PM</Time>
+        <Frequency>Biweekly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+
+    <!-- Participation for Emily Davis (Painting Class) -->
+    <ParticipationEntry>
+      <PersonID>006</PersonID>
+      <ServiceID>1006</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Wednesday</Day>
+        </Days>
+        <Time>02:00 PM - 04:00 PM</Time>
+        <Frequency>Weekly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+
+    <!-- Participation for George Brown (Book Club) -->
+    <ParticipationEntry>
+      <PersonID>003</PersonID>
+      <ServiceID>1007</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Friday</Day>
+        </Days>
+        <Time>03:00 PM - 05:00 PM</Time>
+        <Frequency>Monthly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+
+    <!-- Participation for Jane Smith (Yoga for Reduced Mobility) -->
+    <ParticipationEntry>
+      <PersonID>002</PersonID>
+      <ServiceID>1004</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Monday</Day>
+          <Day>Wednesday</Day>
+        </Days>
+        <Time>10:00 AM - 11:00 AM</Time>
+        <Frequency>Weekly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+
+    <!-- Participation for John Doe (Swimming for Mobility Rehabilitation) -->
+    <ParticipationEntry>
+      <PersonID>001</PersonID>
+      <ServiceID>1005</ServiceID>
+      <Schedule>
+        <Days>
+          <Day>Tuesday</Day>
+        </Days>
+        <Time>01:00 PM - 02:30 PM</Time>
+        <Frequency>Biweekly</Frequency>
+      </Schedule>
+    </ParticipationEntry>
+  </Participation>
+</CarePlatform>
