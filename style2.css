@@ -1,0 +1,75 @@
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4c8f68;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title section */
+h1 {
+    text-align: center Center;
+    background-image: url('icon.png'); /* Path to your background icon */
+    background-size: cover; /* Make sure the image covers the full width without distortion */
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the image */
+    padding: 200px 0; /* Adjust padding to control height */
+    font-size: 100 px;
+    color: #0b291f;
+	font-weight: bold;
+	background-attachment: fixed; /* Keeps the image at high quality while scrolling */
+}
+
+/* Table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #B3D3B3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 20px;
+}
+
+th {
+    background-color: #00695c;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+td img.icon {
+    width: 20px;
+    vertical-align: left;
+    margin-right: 8px;
+}
+
+/* Contact Info Links */
+a.phone, a.email {
+    text-decoration: none;
+    color: #00695c;
+}
+
+a.phone:hover, a.email:hover {
+    text-decoration: underline;
+}
+
+/* "More Information" Button */
+button {
+    background-color: #00897b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
