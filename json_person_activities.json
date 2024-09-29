@@ -1,0 +1,266 @@
+
+    {
+      "PeopleParticipation": [
+        
+
+          {
+            "PersonID": "001",
+            "Name": "John Doe",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability.",
+                    "Frequency": "Biweekly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement."
+                  }
+
+                  
+                    "Social Activity": [
+                  
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction."
+                  }
+
+                  ]
+                  
+              }
+            }
+          }
+          ,
+
+          {
+            "PersonID": "002",
+            "Name": "Jane Smith",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement.",
+                    "Frequency": "Weekly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability."
+                  }
+
+                  ,]
+                  ,
+                    "Social Activity": [
+                  
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction."
+                  }
+
+                  ]
+                  
+              }
+            }
+          }
+          ,
+
+          {
+            "PersonID": "003",
+            "Name": "George Brown",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction.",
+                    "Frequency": "Monthly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability."
+                  }
+
+                  ,]
+                  ,
+                    "Social Activity": [
+                  
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation."
+                  }
+
+                  
+              }
+            }
+          }
+          ,
+
+          {
+            "PersonID": "004",
+            "Name": "Sarah Johnson",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement.",
+                    "Frequency": "Weekly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability."
+                  }
+
+                  ,]
+                  ,
+                    "Social Activity": [
+                  
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction."
+                  }
+
+                  ]
+                  
+              }
+            }
+          }
+          ,
+
+          {
+            "PersonID": "005",
+            "Name": "Michael White",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability.",
+                    "Frequency": "Biweekly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement."
+                  }
+
+                  
+                    "Social Activity": [
+                  
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction."
+                  }
+
+                  ]
+                  
+              }
+            }
+          }
+          ,
+
+          {
+            "PersonID": "006",
+            "Name": "Emily Davis",
+            "Services": {
+              "Participating": [
+                
+                  {
+                    "ServiceID": "1006",
+                    "Description": "Painting classes for creative expression and relaxation.",
+                    "Frequency": "Weekly"
+                  }
+                  
+              ],
+              "NotParticipating": {
+                
+                    "Physical Activity": [
+                  
+                  {
+                    "ServiceID": "1004",
+                    "Description": "Yoga sessions aimed at improving mobility for people with limited movement."
+                  }
+
+                  
+                  {
+                    "ServiceID": "1005",
+                    "Description": "Swimming classes to aid mobility for individuals with reduced movement ability."
+                  }
+
+                  ,]
+                  ,
+                  {
+                    "ServiceID": "1007",
+                    "Description": "Monthly book club for discussion and social interaction."
+                  }
+
+                  ]
+                  
+              }
+            }
+          }
+          
+      ]
+    }
+  
